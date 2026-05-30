@@ -14,6 +14,7 @@ scopes = [
 creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
 gc = gspread.authorize(creds)
 sheet = gc.open("Calificacion").sheet1
+
 # Anthropic setup
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
