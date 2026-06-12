@@ -48,6 +48,6 @@ Donde calificacion es: caliente, tibio o frío.""",
     if respuesta.startswith("LEAD|"):
         partes = respuesta.split("|")
         sheet.append_row([partes[1], partes[2], partes[3], partes[4]])
-        print(f"\nAgente: Lead guardado en Google Sheets ✅\n")
+        print(f"\nAgente: Lead guardado en Google Sheets \n")
     else:
         print(f"\nAgente: {respuesta}\n")
